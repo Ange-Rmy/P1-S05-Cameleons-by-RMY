@@ -22,7 +22,7 @@ a:hover {
 }
 h1{
     font-style: italic;
-    font-size: 2sem;
+    font-size: 2em;
     text-align: center;
     width: 100%;
     height: 2em;
@@ -71,81 +71,89 @@ p {
     width: 900px;
     height: 562px;
     background-size: 900px;
+    position: relative;
 }
 .detailsweektxt{
     font-size: 1.4em;
     text-transform: uppercase;
     background:rgb(240, 87, 104) ;
-    height: 35px;
-    width: 355px;
-    padding: 2px;
-    z-index: 20;
+    padding: 5px;
+    position: absolute;
     text-align: center;
+    top: 0;
+    left: 0;
+    width:390px;
+}
+.detailsweek img{
+    width: 900px;
+    height: 562px;
+    background-size: 900px;    
 }
 
 /*Personnalisation blocs galerie + txt*/
-.bigboxb{
+.bigbox{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-top:20px;
-    width: 900px;
-    height: 920px;
+    justify-content: space-between;
 }
 
 /*blocs galerie images à GAUCHE*/
 .galery{
     width: 600px;
-    height:900px;
-    display:flex;
-    flex-direction: row;
+    height:950px;
+    display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
-    gap: 10px;
 }
-.galery img {
-    width: 135px;
-    height: 135px;
-}
-#minigroupe {    
-    width: 900px;
+.cameleon50{
     height: 290px;
+    width: 290px;
+    grid-area: img00;
+}
+.grpfive{
+    width: 600px;
+    height: 295px;
     display: grid;
-    grid-template-columns: 25%;
-    grid-template-areas: 
-    "a a b c"
-    "a a d e";
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas:
+    "img00 img01 img02"
+    "img00 img03 img04";
     justify-content: space-between;
-    gap: 20px;
+    gap: 5px;
 }
-
-/*DEBUT 5 IMAGES*/
-.image01big {
-    grid-area: a;
+.galerydown img{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 15px;
 }
-
-.image02{
-    grid-area: b;
+.bicolor_flower {
+    width: 140px;
+    height: 140px;
+    grid-area: img01;
 }
-.image03{
-    grid-area: c;
+.white_cameleon{
+    width: 140px;
+    height: 140px;
+    grid-area: img02;
 }
-.image04{
-    grid-area: d;
+.multi_cameleon{
+    width: 140px;
+    height: 140px;
+    grid-area: img03;
 }
-.image05{
-    grid-area: e;
+.left_side_cameleon{
+    width: 140px;
+    height: 140px;
+    grid-area: img04;
 }
-/*FIN 5 IMAGES*/
 
 /*bloc de messages à DROITE*/
-
 .rightbox{
-    width: 280px;
+    width: 285px;
     background-color: rgb(0, 68, 136);
-    padding: 25px;
-    height: 410px;
+    padding: 20px;
+    height: 425px;
     color: rgb(154, 201, 100);
     text-align: left;
     align-items: flex-start;
@@ -157,5 +165,30 @@ footer{
     color: rgb(96, 185, 206);
     padding: 20px;
     width: 900px;
-    margin-top: 50px;
 }
+/*Start Super Bonus*/
+.heart img{
+    margin:0 auto;
+}
+
+@keyframes heartFadeInOut {
+    0% {transform: scale(1);}
+    25% {transform: scale(.97);}
+    35% {transform: scale(.9);}
+    45% {transform: scale(1.1);}
+    55% {transform: scale(.9);}
+    65% {transform: scale(1.1);}
+    75% {transform: scale(1.03);}
+    100% {transform: scale(1);}
+}
+
+.heart img.bottom { 
+    animation-name: heartFadeInOut; 
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+.boutonsright:hover{
+    transform: scale(2);
+    transition-duration: 0.2s;
+}
+/*End Super Bonus*/

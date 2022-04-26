@@ -192,3 +192,72 @@ footer{
     transition-duration: 0.2s;
 }
 /*End Super Bonus*/
+/*Start Mega Bonus*/
+@media screen and (min-width:768px) and (max-width:899px) {
+    body{
+        padding:10px;
+    }
+    h1{
+        width: 100%;
+    }p {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    /*Personnalisation grande image*/
+    .detailsweek{
+        width: 100%;
+        background-size: 900px;
+
+    }
+    .detailsweek img{
+        width: 900px;
+        height: 562px;
+        background-size: 900px;    
+    }
+    .bigbox{
+        width:100%;
+        flex-wrap: wrap;
+        height: 3710px;
+    }
+    .cameleon50{
+        height: auto;
+        width: 99.3% !important;
+        grid-area: img00;
+    }
+    .grpfive{
+        display: grid;
+        height: 1210px;
+        grid-template-columns:50% 50%;
+        grid-template-areas:
+        "img00 img00"
+        "img00 img00"
+        "img01 img02"
+        "img03 img04";
+        row-gap: 15px;
+        margin-bottom: 25px;
+    }
+    .grpfive img{
+        width: 98%;
+        height: auto;
+        justify-content: space-between;
+    }
+    .galerydown{
+        flex-wrap: wrap;
+    }
+    .galerydown img{
+        width:49%;
+        height: auto;
+        margin-bottom: 15px;
+        justify-content: flex-start;
+    }
+    .rightbox{
+        width: 30%;
+        height: 375px;
+        font-size: 0.6em;
+    }
+    .rightbox h3{
+        font-size: 2em;
+    }
+}
+/*@media screen and (max-width:767px)
+End Mega Bonus*/
